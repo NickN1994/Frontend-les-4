@@ -8,8 +8,8 @@
 </head>
 <body>
 <!--Box 1-->
-<header>
-    <div class="outerbox-header">
+<header class="outer-container">
+    <div>
         <nav>
             <ul>
                 <li>Case Studies</li>
@@ -17,40 +17,43 @@
                 <li>Contact us</li>
             </ul>
         </nav>
-        <div>
+        <div class="inner-container">
+
             <section class="header-section">
                 <h1>Your website is an investment in the success of your business.</h1>
                 <p>We are here to help you succed</p>
                 <button type="button">Let's work together</button>
             </section>
-
+            <span>
             <img src="" alt="">
-            <!--        De img kan je in het midden uitlijnen, staat in les 4 hoe dat moet-->
-        </div>
+                <!--        De img kan je in het midden uitlijnen, staat in les 4 hoe dat moet-->
+            </span>
 
+        </div>
     </div>
 </header>
 
 <!--box 2 hello-->
 <main>
-    <div class="outerbox-hello">
-        <div class="innerbox-hello">
-            <section>
-                <article>Rekupe is a digital agency in Los Angeles. We use strategic UX, SEO optimization and beautiful
-                    visual
-                    designs to help your business grow. We see every project as a fresh opportunity, pushing ourselves
-                    to
-                    create new digital experiences.
-                </article>
+    <div class=outer-container>
+        <section class="inner-container">
+            <article class="who-we-are"><h4>Rekupe is a digital agency in Los Angeles.
+                </br></br>
+                We use strategic UX, SEO optimization and beautiful
+                visual
+                designs to help your business grow.
+                </br></br>
+                We see every project as a fresh opportunity, pushing ourselves
+                to
+                create new digital experiences.</h4>
                 <p>Have question? <a href="link">Click here</a> to contact us</p>
-            </section>
-
-        </div>
+            </article>
+        </section>
     </div>
 
     <!--    box 3 work-->
-    <div class="outerbox-work">
-        <div class="innerbox-work">
+    <div class=outer-container>
+        <div class=inner-container>
 
             <section class="column-one">
                 <article>
@@ -76,7 +79,7 @@
                     <a href="link">View Project</a>
                 </article>
                 <div>
-                    <img src="/Assets/work-image-01.jpeg" alt="desk with laptop and rolling stone">
+                    <img src="/Assets/work-image-01.jpeg" alt="desk with laptop and rolling stone" class="image-one">
                 </div>
             </section>
 
@@ -96,7 +99,7 @@
         </div>
     </div>
 
-<!--    box 4 services-->
+    <!--    box 4 services-->
     <div class="outerbox-services">
         <div class="innerbox-services">
             <article class="web-design">
@@ -162,10 +165,30 @@
     <div class="outerbox-footer">
         <div class="innerbox-footer">
             <div>
-            <h2>Let's work together</h2>
-            <p>Have a question? Need a quote? Let us know!</p>
-
+                <h2>Let's work together</h2>
+                <p>Have a question? Need a quote? Let us know!</p>
             </div>
+            <form>
+                <div class="form-name">
+                    <label for="name-field">Name</label>
+                    <input type="text" id="name-field" placeholder="Name" name="fullname"/>
+                </div>
+                <div class="form-email">
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" placeholder="Email" name="email"/>
+                </div>
+                <div class="form-message">
+                    <label for="Message">Message</label>
+                    <input type="text" id="Message" placeholder="Message" name="messaga"/>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <p>Business website opdracht © NOVI Hogeschool 2022</p>
         </div>
     </div>
 </footer>
