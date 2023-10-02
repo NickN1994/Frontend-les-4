@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300;500&display=swap');
 
 
 /*////////////////////////
@@ -41,6 +41,7 @@ h1 {
     font-size: 3em;
     text-align: center;
     color: white;
+    flex-shrink: 1;
 }
 
 h2 {
@@ -87,6 +88,7 @@ html {
     flex-direction: column;
     margin: 0 40px 0 40px;
     border: 2px dashed black;
+    align-items: center;
 }
 
 /* --------------- 3.2 Other --------------------------- */
@@ -95,8 +97,13 @@ html {
 
 /* --------------- 4.1 Header ------------------------- */
 header {
-    height: 500px;
-    background-color: #5722CD;
+    /*background-image: url("../assets/squiggle_line_stripe.svg");*/
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+    flex-shrink: 1;
+    /*background-image: rgb(87,34,205);*/
+    background-image: linear-gradient(274deg, rgba(87,34,205,1) 0%, rgba(72,69,228,1) 25%), url("../assets/squiggle_line_stripe.svg");
+    padding-bottom: 150px;
 }
 
 
@@ -109,6 +116,7 @@ ul {
     gap: 35px;
     list-style: none;
     color: white;
+    font-size: 1.2em;
 }
 
 .header-section {
@@ -116,6 +124,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1400px;
 }
 
 h1 {
@@ -130,11 +139,17 @@ h1 {
 
 .button-header {
     padding: 25px;
-    /*border-radius: 25%;*/
     font-family: 'Roboto', Arial, sans-serif;
-    font-weight: 600;
+    font-weight: 300;
+    font-size: 0.85em;
+    color: #F3F6F9;
+    letter-spacing: 2px;
     background-color: #ED4385;
-
+    border-radius: 40px;
+    border-color: #ED4385;
+    width: 280px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* --------------- 4.2 Hello ------------------- */
@@ -143,13 +158,14 @@ h1 {
     align-items: center;
     text-align: center;
     border: 1px solid red;
-    max-width: 700px;
+    max-width: 800px;
     margin: 85px 0;
 }
 
 .question {
-    margin-top: 40px;
+    margin-top: 100px;
     font-size: 1.25em;
+    font-weight: 500;
 }
 
 .click-here {
@@ -170,6 +186,12 @@ h1 {
     border: 1px dashed green;
     flex-grow: 0;
     flex-shrink: 1;
+    font-weight: 500;
+    margin: 100px 0;
+}
+
+.squiggle-img {
+    margin: 40px 0;
 }
 
 .column-two {
@@ -178,27 +200,43 @@ h1 {
     justify-content: space-between;
     align-items: center;
     border: 1px dashed green;
-
+    font-weight: 500;
     flex-grow: 0;
     flex-shrink: 1;
 }
 
-.article-work {
-    max-width: 350px;
-    margin-left: 50px;
+.colomn-text {
+    font-size: 1.25em;
+    margin-bottom: 50px;
 }
 
-.article-work-2 {
+.article-work, .article-work-2 {
     max-width: 350px;
-    margin-right: 50px;
+    margin: 0 50px;
 }
+
+.column a {
+    color: #5722CD;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.column-two a {
+    color: #5722CD;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
 
 .work-title {
     color: #0C0C0C;
 }
 
 .image-work {
-    width: 100%
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .image-wrapper {
@@ -230,6 +268,12 @@ h1 {
         justify-content: center;
         padding: 45px;
         color: #7A7A7A;
+        box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .article-services img {
+        max-width: 80px;
+        margin-bottom: 10px;
     }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
