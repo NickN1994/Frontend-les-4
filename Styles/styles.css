@@ -97,13 +97,18 @@ html {
 
 /* --------------- 4.1 Header ------------------------- */
 header {
-    /*background-image: url("../assets/squiggle_line_stripe.svg");*/
     background-repeat: no-repeat;
     background-position: bottom, center;
     flex-shrink: 1;
-    /*background-image: rgb(87,34,205);*/
-    background-image: linear-gradient(274deg, rgba(87,34,205,1) 0%, rgba(72,69,228,1) 25%), url("../assets/squiggle_line_stripe.svg");
+    background-image: linear-gradient(274deg, rgba(87, 34, 205, 1) 0%, rgba(72, 69, 228, 1) 25%), url("../assets/squiggle_line_stripe.svg");
     padding-bottom: 150px;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    bottom: 0;
+
 }
 
 
@@ -115,6 +120,10 @@ ul {
     margin: 15px 25px 15px 0;
     gap: 35px;
     list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
     color: white;
     font-size: 1.2em;
 }
@@ -135,12 +144,13 @@ h1 {
     color: white;
     font-size: 2em;
     padding-bottom: 35px;
+    text-align: center;
 }
 
 .button-header {
     padding: 25px;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-weight: 300;
+    /*font-family: 'Roboto', Arial, sans-serif;*/
+    /*font-weight: 300;*/
     font-size: 0.85em;
     color: #F3F6F9;
     letter-spacing: 2px;
@@ -149,7 +159,7 @@ h1 {
     border-color: #ED4385;
     width: 280px;
     text-transform: uppercase;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* --------------- 4.2 Hello ------------------- */
@@ -245,35 +255,178 @@ h1 {
     flex-shrink: 1;
 }
 
-    /*}*/
+/*}*/
 
-    /* --------------- 4.4 Services ------------------- */
+/* --------------- 4.4 Services ------------------- */
 
-    .inner-container-row {
-        display: flex;
-        flex-direction: row;
-        flex-basis: 1400px;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        border: 1px solid yellow;
+.inner-container-row {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1400px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid yellow;
+}
+
+.article-services {
+    height: 400px;
+    width: 400px;
+    margin: 25px;
+    border: 1px solid #5722CD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+    color: #7A7A7A;
+    box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.15);
+}
+
+.article-services img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+/* --------------- 4.5 footer ------------------- */
+
+footer {
+    background: linear-gradient(274deg, rgba(87, 34, 205, 1) 0%, rgba(72, 69, 228, 1) 25%);
+}
+
+footer h2 {
+    color: #F3F6F9;
+    font-size: 3em;
+    text-align: center;
+    padding: 100px 0 35px 0;
+}
+
+footer p {
+    color: #F3F6F9;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.inner-container-footer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+form {
+    border: 2px dotted pink;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     }
 
-    .article-services {
-        height: 400px;
-        width: 400px;
-        margin: 25px;
-        border: 1px solid #5722CD;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 45px;
-        color: #7A7A7A;
-        box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.15);
-    }
 
-    .article-services img {
-        max-width: 80px;
-        margin-bottom: 10px;
-    }
+label {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 500;
+    color: #F3F6F9;
+    margin-top: 20px;
+    width: 60%;
+}
+
+input, textarea {
+    width: 60%;
+    display: block;
+}
+
+input {
+    height: 50px;
+}
+
+textarea {
+    height: 200px;
+}
+
+::placeholder {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.form-field {
+    padding: 15px 0;
+}
+
+footer button {
+    padding: 15px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 0.85em;
+    color: #F3F6F9;
+    letter-spacing: 2px;
+    background-color: #ED4385;
+    border-radius: 40px;
+    border-color: #ED4385;
+    width: 280px;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.outer-container-bottom {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    background: #0C0C0C;
+    height: 50px;
+    color: #F3F6F9;
+    font-size: 0.8em;
+}
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (max-width: 576px) {
+    ul {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    .intro {
+        font-size: 1.5em;
+    }
+    .column {
+        flex-direction: column-reverse;
+        margin: 100px 0;
+        /*align-items: flex-start;*/
+    }
+
+    .column-two {
+        flex-direction: column-reverse;
+        margin: 0 0;
+    }
+    .image-wrapper {
+        flex-basis: 50px;
+        margin-bottom: 25px;
+    }
+
+    .article-work, .article-work-2 {
+        max-width: 350px;
+        margin: 0 0;
+    }
+
+    footer h2 {
+        font-size: 2em;
+    }
+
+    footer p {
+        font-size: 1.25em;
+    }
+}

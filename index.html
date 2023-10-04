@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,13 +8,13 @@
 </head>
 <body>
 <!--Box 1-->
-<header class="outer-container">
+<header class="outer-container test">
     <div>
         <nav>
             <ul>
-                <li>Case Studies</li>
-                <li>Services</li>
-                <li>Contact us</li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#form">Contact us</a></li>
             </ul>
         </nav>
         <div class="inner-container">
@@ -24,13 +24,12 @@
                 <p class="intro">We are here to help you succeed.</p>
                 <button type="button" class="button-header">Let's work together</button>
             </section>
-            <span>
-            <img src="" alt="">
-                <!--        De img kan je in het midden uitlijnen, staat in les 4 hoe dat moet-->
-            </span>
+
 
         </div>
+
     </div>
+    <img src="Assets/squiggle_line_stripe.svg" alt="squigle line strip">
 </header>
 
 <!--box 2 hello-->
@@ -38,28 +37,30 @@
     <div class=outer-container>
         <section class="inner-container">
             <article class="who-we-are"><h2>Rekupe is a digital agency in Los Angeles.
-                </br></br>
+                <br>
                 We use strategic UX, SEO optimization and beautiful
                 visual
                 designs to help your business grow.
-                </br></br>
+                <br>
                 We see every project as a fresh opportunity, pushing ourselves
                 to
                 create new digital experiences.</h2>
-                <p class="question">Have question? <a href="link" class="click-here">Click here</a> to contact us</strong></p>
+                <p class="question">Have question? <a href="#form" class="click-here">Click here</a> to contact
+                    us</p>
             </article>
         </section>
     </div>
 
     <!--    box 3 work-->
     <div class="outer-container container-work">
-        <div class=inner-container>
+        <div class=inner-container id="case-studies">
 
             <section class="column">
                 <article class="article-work">
                     <h2 class="work-title">Rolling Stone</h2>
                     <img src="/Assets/squiggle_line.svg" alt="squiggle line" class="squiggle-img">
-                    <p class="colomn-text">You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global
+                    <p class="colomn-text">You know Rolling Stone. It’s the definitive voice in music, politics and
+                        culture. It’s a global
                         icon.</p>
                     <a href="link">View Project</a>
                 </article>
@@ -72,7 +73,8 @@
                 <article class="article-work-2">
                     <h2 class="work-title">Variety</h2>
                     <img src="/Assets/squiggle_line.svg" alt="squiggle line" class="squiggle-img">
-                    <p class="colomn-text">Variety is an industry leader for breaking entertainment news, reviews and box office results
+                    <p class="colomn-text">Variety is an industry leader for breaking entertainment news, reviews and
+                        box office results
                         with archive of content dating back to 1905.</p>
                     <a href="link">View Project</a>
                 </article>
@@ -85,7 +87,8 @@
                 <article class="article-work">
                     <h2 class="work-title">Worth</h2>
                     <img src="/Assets/squiggle_line.svg" alt="squiggle line" class="squiggle-img">
-                    <p class="colomn-text">A global media platform connecting a community that embraces worth beyond wealth.</p>
+                    <p class="colomn-text">A global media platform connecting a community that embraces worth beyond
+                        wealth.</p>
                     <a href="link" class="column-link">View Project</a>
                 </article>
                 <span class="image-wrapper">
@@ -98,7 +101,7 @@
 
     <!--    box 4 services-->
     <div class="outer-container">
-        <div class="inner-container-row">
+        <div class="inner-container-row" id="services">
             <article class="article-services">
                 <img src="/Assets/icon_web-design.svg" alt="Web design">
 
@@ -161,36 +164,35 @@
 </main>
 
 <footer>
-    <div class="outerbox-footer">
-        <div class="innerbox-footer">
+    <div class="outer-container">
+        <div class="inner-container-footer" id="form">
             <div>
                 <h2>Let's work together</h2>
                 <p>Have a question? Need a quote? Let us know!</p>
             </div>
             <form>
-                <div class="form-name">
-                    <label for="name-field">Name</label>
-                    <input type="text" id="name-field" placeholder="Name" name="fullname"/>
-                </div>
-                <div class="form-email">
-                    <label for="Email">Email</label>
-                    <input type="email" id="Email" placeholder="Email" name="email"/>
-                </div>
-                <div class="form-message">
-                    <label for="Message">Message</label>
-                    <input type="text" id="Message" placeholder="Message" name="messaga"/>
-                </div>
+                <label for="name-field">Name</label>
+                <input type="text" id="name-field" placeholder="Name" name="fullname"/>
+
+
+                <label for="Email">Email</label>
+                <input type="email" id="Email" placeholder="Email" name="email"/>
+
+                <label for="Message">Message</label>
+                <textarea id="Message" placeholder="Message" name="message"></textarea>
+
                 <button type="submit">Send</button>
             </form>
         </div>
     </div>
-
-    <div>
-        <div>
-            <p>Business website opdracht © NOVI Hogeschool 2022</p>
+</footer>
+<div class="outer-container-bottom">
+    <div class="inner-container">
+        <div class="footer-bottom">
+            <p class="footer-text">Business website opdracht © NOVI Hogeschool 2022</p>
         </div>
     </div>
-</footer>
+</div>
 
 </body>
 </html>
