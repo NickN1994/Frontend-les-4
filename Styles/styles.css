@@ -77,7 +77,6 @@ html {
     flex-grow: 0;
     flex-shrink: 1;
     justify-content: center;
-    border: 1px solid red;
 }
 
 .inner-container {
@@ -87,7 +86,6 @@ html {
     display: flex;
     flex-direction: column;
     margin: 0 40px 0 40px;
-    border: 2px dashed black;
     align-items: center;
 }
 
@@ -108,7 +106,6 @@ header {
 header img {
     position: absolute;
     bottom: 0;
-
 }
 
 
@@ -149,8 +146,7 @@ h1 {
 
 .button-header {
     padding: 25px;
-    /*font-family: 'Roboto', Arial, sans-serif;*/
-    /*font-weight: 300;*/
+    margin-bottom: 50px;
     font-size: 0.85em;
     color: #F3F6F9;
     letter-spacing: 2px;
@@ -167,7 +163,6 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid red;
     max-width: 800px;
     margin: 85px 0;
 }
@@ -193,7 +188,6 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px dashed green;
     flex-grow: 0;
     flex-shrink: 1;
     font-weight: 500;
@@ -209,7 +203,6 @@ h1 {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    border: 1px dashed green;
     font-weight: 500;
     flex-grow: 0;
     flex-shrink: 1;
@@ -265,20 +258,19 @@ h1 {
     flex-basis: 1400px;
     justify-content: space-around;
     flex-wrap: wrap;
-    border: 1px solid yellow;
 }
 
 .article-services {
     height: 400px;
     width: 400px;
     margin: 25px;
-    border: 1px solid #5722CD;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 45px;
     color: #7A7A7A;
     box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #5722CD;
 }
 
 .article-services img {
@@ -313,11 +305,9 @@ footer p {
     flex-shrink: 1;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 form {
-    border: 2px dotted pink;
     width: 100%;
     align-items: center;
     display: flex;
@@ -370,6 +360,7 @@ footer button {
     width: 280px;
     text-transform: uppercase;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    margin: 35px 0;
 }
 
 
@@ -381,7 +372,6 @@ footer button {
     flex-shrink: 1;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     background: #0C0C0C;
     height: 50px;
     color: #F3F6F9;
@@ -394,6 +384,10 @@ footer button {
 @media screen and (max-width: 576px) {
     ul {
         justify-content: center;
+    }
+
+    ul li {
+        font-weight: 500;
     }
 
     h1 {
@@ -424,6 +418,10 @@ footer button {
 
     footer h2 {
         font-size: 2em;
+    }
+
+    input, textarea {
+        width: 85%;
     }
 
     footer p {
